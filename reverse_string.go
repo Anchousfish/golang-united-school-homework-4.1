@@ -1,13 +1,15 @@
 package reverse_string
 
 import (
-	"bufio"
-	"os"
+	"fmt"
+	//"bufio"
+	//"os"
 )
 
 func ReverseString(input string) (output string) {
-
-	some_string, _ := bufio.NewReader(os.Stdin).ReadString('\n')
+	var some_string string
+	//some_string, _ := bufio.NewReader(os.Stdin).ReadString('\n')
+	fmt.Scan(&some_string)
 	line := []rune(some_string)
 	line2 := make([]rune, len(some_string))
 
